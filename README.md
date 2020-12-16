@@ -1,3 +1,11 @@
+# Springboard SQL optimization project
+## Overview
+This project contains all the sql files needed to replicate the SQL optimization project, part of the Springboard Data Engineering curriculum. The SQL optimization project is an exercise in using various techniques (mostly indexes and breaking up queries into smaller bits) to reduce the runtime and cost of SQL queries.
+
+In order to run locally, connect to a MySQL database and run the `populate_data.sql` file. The individual numbered question files contain scratchwork used to come up with the appropriate optimizations that are implemented in the `all_questions.sql` file. You can follow along with the optimizations in the `all_questions.sql` file by running the commands in order.
+
+For more information on Springboard, visit [springboard.com](https://www.springboard.com).
+
 ### Q1
 Optimizations:
 - To avoid table scan, add primary key to student table on id. This results in a much faster single-value index lookup.
